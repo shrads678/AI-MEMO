@@ -76,6 +76,10 @@ function takeCommand(message) {
         window.open('Calculator:///');
         const finalText = "Opening Calculator";
         speak(finalText);
+        } else if (message.includes('notepad')) {
+        window.open('Notepad:///');
+        const finalText = "Opening Notepad";
+        speak(finalText);
 
         // Basic Command Handler for Tekk AI Robot Assistant
 
