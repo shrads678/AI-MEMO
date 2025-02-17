@@ -38,17 +38,6 @@ recognition.onresult = (event) => {
     content.textContent = transcript;
     takeCommand(transcript.toLowerCase());
 };
-const { exec } = require('child_process');
-
-function openNotepad() {
-    exec('notepad', (err, stdout, stderr) => {
-        if (err) {
-            console.error(`Error opening Notepad: ${err}`);
-            return;
-        }
-        console.log('Notepad opened successfully');
-    });
-}
 
 btn.addEventListener('click', () => {
     content.textContent = "Listening...";
