@@ -81,7 +81,6 @@ function takeCommand(message) {
         const speech = new SpeechSynthesisUtterance(finalText);
         window.speechSynthesis.speak(speech);    
     alert(finalText);
-}
         // Basic Command Handler for Tekk AI Robot Assistant
 
 // Function to handle commands
